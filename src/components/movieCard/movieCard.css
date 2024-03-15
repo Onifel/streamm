@@ -1,0 +1,66 @@
+.movie-card {
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-height: 450px;
+  height: 100%;
+  margin: 10px 0 0 35px;
+  width: 80%;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: 80%;
+    margin-left: 50px;
+  }
+}
+
+.card-top {
+  height: 300px;
+}
+
+.card-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .card-top img {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.card-bottom {
+  padding: 20px;
+}
+
+.card-info {
+  color: #fff;
+}
+
+  .card-info h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #30fdfc;
+  }
+
+  @media (max-width: 768px) {
+    .card-info h4 {
+      margin-top: -30px;
+    }
+  }
+
+  .card-info p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+

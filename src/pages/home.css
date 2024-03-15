@@ -1,0 +1,165 @@
+.movies {
+  overflow-x: hidden;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 10rem;
+}
+
+.hero {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  font-size: 5.5rem;
+  color: #53707a;
+  font-family: "HL-Brush-3BK", sans-serif;
+  text-decoration: underline;
+  z-index: 3;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+}
+
+.scroll-down {
+  height: 30px;
+  width: 80px;
+  border: 2px solid #30fdfc;
+  position: absolute;
+  left: calc(50% - 40px);
+  bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.scroll-down:hover {
+  background: #435f69;
+  color: #fff;
+}
+
+.scroll-down:active {
+  background: #02293c;
+  color: #c7834f;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid #d6c8bf;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+#scroll-dest {
+  position: relative;
+  bottom: 25rem;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(48,253,252) 75%
+    );
+  z-index: -10;
+}
+
+.bgImg{
+  display: flex;
+  background: url('../assets/mwh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.man-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: -5rem;
+}
+
+.man {
+  width: 420px;
+  height: 447px;
+}
+
+.flash-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: -5rem;
+}
+
+.flash {
+  width: 420px;
+  height: 447px;
+}
+

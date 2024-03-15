@@ -1,0 +1,153 @@
+.movie-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 10px 40px 0;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 80px;
+  gap: 40px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .movie-section {
+    padding-right: 20px;
+  }
+}
+
+.section-left {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.movie-rating {
+  padding-left: 3px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-rating span {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .movie-rating {
+    font-size: 12px;
+  }
+}
+
+.movie-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #30fdfc;
+}
+
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 24px;
+  }
+}
+
+.movie-plot {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .movie-plot {
+    margin-top: 40px;
+    font-size: 11px;
+    width: 80vw;
+  }
+}
+
+.movie-info {
+  @media (max-width: 768px) {
+    width: 80vw;
+    font-size: 10px;
+  }
+}
+
+.movie-info > div span:first-child {
+  margin-top: 10px;
+  padding: 0;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  width: 100px;
+  display: inline-block;
+}
+
+.movie-info > div span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.movie-rating .ttl, #ovv, #lgg, #plt{
+  color: #435f69;
+}
+
+#rd{
+  color: #ec5b2f;
+}
+
+.fa-star {
+  color: #ff9e00;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.fa-thumbs-up {
+  color: #fafafa;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.fa-film {
+  color: #bfd5d6;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.fa-calendar {
+  color: peachpuff;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.section-right img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-right img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+  }
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: #30fdfc;
+  font-size: 2.3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    top: 70px;
+  }
+}
